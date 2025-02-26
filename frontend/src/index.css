@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app {
+  text-align: center;
+  padding-bottom: 60px;
+  /* 하단 고정 바가 겹치지 않도록 여백 추가 */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  /* 세로 정렬 */
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1px;
+}
+
+.bottom-nav img {
+  width: 40px;
+  /* 이미지 크기 조정 */
+  height: auto;
+  object-fit: contain;
+}
+
+.bottom-nav a:hover img {
+  filter: brightness(1.2);
+  /* 이미지에 호버 시 밝기 조정 */
 }
